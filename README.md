@@ -23,6 +23,6 @@
     2. 由于尚未学习网络访问之API，此次作业可以将题库数据存储到app.js定义的全局变量中
 
 
-## 感谢以下项目
+## 四、感谢以下项目
 * [WeChatAnswer](https://github.com/YuPeng73/WeChatAnswer.git)
 * [wechat-qua](https://github.com/shenqing123/wechat-qua.git)
