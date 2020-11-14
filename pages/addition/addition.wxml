@@ -1,0 +1,27 @@
+<view class="container">
+  <text>加法题目</text>
+  <view class='title'>第{{current+1}}题</view>
+  <view class='question'>{{myQuesList[current].question}}</view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <View class="addition" wx:for="{{myQuesList[current].option}}" wx:for-index="key" wx:for-item="value">
+      <radio value="{{key}}" checked="{{myQuesList[current].checked}}" />{{key}}、{{value}}
+    </View>
+  </radio-group>
+
+  <view>
+    <button class='btn-item' bindtap='bindRight'>确认</button>
+    <text>回答{{judge}}，正确选项是{{thetrueValue}}</text>
+  </view>
+  <view class='btn-body'>
+    <block wx:if='{{current<3}}'>
+      <button class='btn-item' bindtap='bindNext'>下一题</button>
+    </block>
+    <block wx:else>
+      <button class='btn-item' type='warn' bindtap='bindShowGrade'>显示成绩</button>
+    </block>
+
+  </view>
+
+
+
+</view>

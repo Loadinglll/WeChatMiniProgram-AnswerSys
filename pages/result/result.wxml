@@ -1,0 +1,14 @@
+<view class="container">
+  
+  <view class='head'>
+    <view class="score">
+      您答对了:{{totalScore}}题
+    </view>
+    
+    <view class='rate'>
+      <text>正确率为：{{totalScore/4*100}}%</text>
+    </view>
+    
+  </view>
+
+</view>

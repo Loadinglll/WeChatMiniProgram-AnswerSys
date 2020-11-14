@@ -1,0 +1,7 @@
+<view class="container">
+  <text>答题系统</text>
+  <picker mode="selector" range="{{selectorItems}}" bindchange="selectorChange">
+    <view>选择题库为：{{selector}}</view>
+  </picker>
+
+</view>
